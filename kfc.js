@@ -79,30 +79,54 @@ var leftBtn = document.querySelector(".left-btn");
     }
 
 
-    /* scroll navbar */
 
 
-    let navbar =  document.querySelector(".navbar");
+
+    /* scroll navbar copide from deals section*/
+
+// mobile size toggle display menu 
+
+var navToggle = document.querySelector("#nav-toggle-bar");
+
+navToggle.onclick = function(){
+    displayMenu();
+}
+
+function displayMenu(){
+  
+  var leftItems = document.querySelectorAll(".navbar-left-side")[0];
+
+  leftItems.classList.toggle("show-icons");
 
 
-    // call function when scroll window
-    window.onscroll = function(){
-        scrollNav();
-    };
+}
 
-    // get the offset position of the navbar 
-    var sticky = navbar.offsetTop;
 
-    //add the  scrollNav class to the navbar when you reach its scroll position. remove sticky when you leave the scroll position
-    function scrollNav(){
-        
-        if (window.pageYOffset >= sticky){
-        navbar.classList.add("scroll-nav");
-        }else{
-        navbar.classList.add("scroll-nav");
-        }
+//  scroll navbar 
 
-    }
+ /* scroll navbar */
+ let navbar =  document.querySelector(".kfc-navbar");
+
+ // call function when scroll window
+ window.onscroll = function(){
+     scrollNav();
+ };
+
+
+ // get the offset position of the navbar 
+ var sticky = navbar.offsetTop;
+
+
+ //add the  scrollNav class to the navbar when you reach its scroll position. remove sticky when you leave the scroll position
+ function scrollNav(){
+     
+     if (window.pageYOffset >= sticky){
+     navbar.classList.add("scroll-nav");
+     }else{
+     navbar.classList.add("scroll-nav");
+     }
+
+ }
 
 
 
