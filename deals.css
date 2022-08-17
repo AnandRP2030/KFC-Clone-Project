@@ -3,14 +3,28 @@
 
 *{
     margin:0;
+    
+
 }
 
-.navbar{
+body{
+    height:1200px;
+}
+
+.deals-navbar{
  
     height:100px;
     width:100%;
     display:flex;
+    background-color:white;
+    z-index:2;
+}
 
+/* scroll navbar  */
+
+.scroll-nav{
+    position:fixed;
+    top:0;
 }
 
 
@@ -104,6 +118,9 @@
     text-align:center;
     padding:10px 0;
     box-sizing:border-box;
+    position:relative;
+    top:101px;
+    z-index:1;
 }
 
 
@@ -114,7 +131,9 @@
     width:100%; 
     font-family:sans-serif;
     font-weight:700;
+    letter-spacing:-1px;
 }
+
 
 .start-order-btn{
     width:136px;
@@ -125,13 +144,60 @@
     background-color:#e4002b;
     margin-left: 10px;
     color:white;
-    
-    
+    cursor:pointer;
 
 }
 
+/* Deals & offer  */
 
+.deals-offer-section{
+    background-image:url(https://online.kfc.co.in/static/media/offer_deals_banner.777f20e1.svg);
+    width:100%;
+    height:280px;
+    position:relative;
+    top:101px;
+}
 
+.deals-offer-section>h1{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-family:sans-serif;
+    text-transform:uppercase;
+    letter-spacing:-2.8px;
+    font-size:4rem;
+
+}
+
+/* National Offers */
+
+.national-offers{
+    width:100%;
+    height:500px;
+    position:relative;
+    background-color:azure;
+    top:65px;
+}
+
+.deals-strips{
+    position:relative;
+    left:202px;
+    width: 57px;
+    height: 30px;
+    background: repeating-linear-gradient(90deg,#e4002b,#e4002b, 12px, #fff 0, #fff 22px);
+}
+
+.national-offers>h1{
+    font-family:sans-serif;
+    text-transform:uppercase;
+    position:relative;
+    left:202px;
+    top:30px;
+    letter-spacing:-1px;
+
+}
 
 /**************** Media Query **************/
 
@@ -139,7 +205,7 @@
 
     /* navbar left side / */
 
-    .navbar{
+    .deals-navbar{
         height:50px;
         padding-top:15px;
         padding-left:10px;
