@@ -492,6 +492,8 @@ body{
 .card-second-half>h1 {
   color: red;
   font-size: 24px;
+  font-weight: 800;
+    letter-spacing: -2px;
 
 }
 
