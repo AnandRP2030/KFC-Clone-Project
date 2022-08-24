@@ -6,10 +6,12 @@
 
 }
 
+
 body{
     height:1200px;
     font-family:sans-serif;
 }
+
 
 .deals-navbar{
  
@@ -19,6 +21,12 @@ body{
     background-color:white;
     z-index:2;
 }
+
+
+
+
+
+
 
 /* scroll navbar  */
 
@@ -254,6 +262,7 @@ body{
     font-weight: 700;
     font-size: 1.5rem;
     line-height: 37px;
+
     
 }
 
@@ -340,6 +349,7 @@ body{
     border-radius:0 0 8px 8px;
     
 }
+
 .deals-card-second-half h1{   
     font-weight: 800;
     text-align: center;
@@ -403,10 +413,52 @@ footer table{
     column-width:25px;
 }
 
+
+
+
+/* right side elements  */
+
+.footer-right-section{
+    float:right;
+}
+
+.deals-location{
+    right: 303px;
+    position: relative;
+    bottom: 128px;
+}
+
+.deals-location a{
+    color:white;
+    font-size:13px;
+}
+
+.deals-play-store{
+    position: relative;
+    bottom: 146px;
+    right: 109px;
+}
+.deals-play-store img{
+    height:auto;
+    width:112px;
+    margin-right:24px;
+
+
 footer table td{
     padding :6px 5px;
+
     cursor:pointer;
 }
+
+/* footer down section  */
+
+.footer-down-section{
+    color:white;
+    position:relative;
+    top:150px;
+}
+
+
 
 
 /* right side elements  */
@@ -460,6 +512,7 @@ footer table td{
     position:relative;
     left:138px;
     bottom:15px;
+
 
 }
 /**************** Media Query **************/
