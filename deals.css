@@ -413,7 +413,10 @@ footer table{
     column-width:25px;
 }
 
-
+footer table td{
+    padding :6px 5px;
+    cursor:pointer;
+}
 
 
 /* right side elements  */
